@@ -4,142 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cyber Theme Homepage</title>
+    <title>Login Page</title>
     <style>
-        /* Global Styles */
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #0d0d1d;
-            color: white;
-            line-height: 1.6;
-        }
-
-        /* Header */
-        header {
-            background-color: #1a1a2e;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        }
-
-        header h1 {
-            font-size: 3em;
-            color: #00bcd4;
-        }
-
-        header p {
-            font-size: 1.2em;
-            color: #90caf9;
-        }
-
-        /* Navigation Menu */
-        nav {
-            background-color: #1a1a2e;
-            padding: 10px 0;
             display: flex;
             justify-content: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            align-items: center;
+            height: 100vh;
         }
 
-        nav a {
-            color: #90caf9;
-            text-decoration: none;
-            padding: 14px 20px;
-            font-size: 1.1em;
-            transition: background-color 0.3s ease;
-        }
-
-        nav a:hover {
-            background-color: #00bcd4;
-            border-radius: 4px;
-        }
-
-        /* Main Content */
-        section {
-            padding: 40px;
-            text-align: center;
-            background: linear-gradient(145deg, #0d0d1d, #1a1a2e);
-        }
-
-        section h2 {
-            font-size: 2.5em;
-            color: #00bcd4;
-        }
-
-        section p {
-            font-size: 1.2em;
-            color: #b0bec5;
-        }
-
-        /* Footer */
-        footer {
+        .login-container {
             background-color: #1a1a2e;
-            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            width: 300px;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
+        }
+
+        .login-container h1 {
+            color: #00bcd4;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .input-field {
             width: 100%;
-            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #2b2b3d;
+            color: white;
+            font-size: 1.1em;
         }
 
-        footer p {
-            font-size: 1em;
-            margin: 0;
+        .input-field:focus {
+            outline: none;
+            border-color: #00bcd4;
         }
 
-        /* Button */
-        .btn {
-            padding: 15px 30px;
+        .login-btn {
+            width: 100%;
+            padding: 14px;
             background-color: #00bcd4;
             color: white;
-            text-transform: uppercase;
-            font-weight: bold;
             border: none;
             border-radius: 5px;
+            font-size: 1.2em;
             cursor: pointer;
-            transition: background-color 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
+            transition: background-color 0.3s;
         }
 
-        .btn:hover {
+        .login-btn:hover {
             background-color: #0097a7;
+        }
+
+        .footer {
+            margin-top: 20px;
+            color: #b0bec5;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <h1>CyberTech</h1>
-        <p>Exploring the Future of Technology</p>
-    </header>
-
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </nav>
-
-    <!-- Main Content Section -->
-    <section>
-        <h2>Welcome to the Future</h2>
-        <p>We are shaping the digital world with cutting-edge technology solutions. Join us on our journey to a brighter, smarter future.</p>
-        <a href="#" class="btn">Get Started</a>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 CyberTech. All rights reserved.</p>
-    </footer>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form>
+            <input type="text" class="input-field" placeholder="Username" required><br>
+            <input type="password" class="input-field" placeholder="Password" required><br>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+        <div class="footer">
+            <p>Don't have an account? <a href="#">Sign Up</a></p>
+            <p><a href="#">Forgot Password?</a></p>
+        </div>
+    </div>
 
 </body>
 </html>
+
 
 
 
