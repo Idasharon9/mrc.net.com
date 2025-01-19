@@ -1,150 +1,109 @@
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sky Blue Theme Homepage</title>
+    <title>MRC Consultancy - Cybersecurity Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Global Styles */
-        body {
-            font-family: 'Arial', sans-serif;
+        /* Basic Reset */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #e3f2fd;
-            color: #333;
+            box-sizing: border-box;
         }
 
-        /* Header */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('https://www.transparenttextures.com/patterns/circuit-board-2.png'), #2c3e50; /* Cybersecurity-style background */
+            color: #fff;
+            line-height: 1.6;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
         header {
-            background-color: #90caf9;
-            color: white;
+            background-color: rgba(44, 62, 80, 0.8);
+            padding: 20px 0;
             text-align: center;
-            padding: 20px 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         header h1 {
-            margin: 0;
             font-size: 2.5em;
+            font-weight: 700;
         }
 
-        header p {
-            margin: 5px 0 0;
-            font-size: 1.2em;
-        }
-
-        /* Navigation Bar */
-        nav {
-            background-color: #64b5f6;
-            padding: 10px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.1em;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #e3f2fd;
-        }
-
-        /* Main Content Section */
-        section {
-            padding: 40px 20px;
+        .main-content {
             text-align: center;
-            background-color: white;
-            margin: 20px auto;
-            border-radius: 10px;
-            width: 90%;
-            max-width: 800px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 50px 20px;
         }
 
-        section h2 {
+        .main-content h2 {
             font-size: 2em;
-            color: #1976d2;
             margin-bottom: 20px;
         }
 
-        section p {
+        .main-content p {
             font-size: 1.2em;
-            line-height: 1.6;
-            color: #555;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
         }
 
-        /* Footer */
+        .cta-button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #c0392b;
+        }
+
         footer {
-            background-color: #90caf9;
+            background-color: rgba(44, 62, 80, 0.8);
             color: white;
             text-align: center;
-            padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            padding: 15px 0;
         }
 
-        footer p {
-            margin: 0;
-            font-size: 1em;
-        }
-
-        /* Button */
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 20px;
-            background-color: #64b5f6;
+        footer a {
             color: white;
             text-decoration: none;
-            font-size: 1em;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .btn:hover {
-            background-color: #1976d2;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
-<body>
 
-    <!-- Header Section -->
+<body>
     <header>
-        <h1>Welcome to My Website</h1>
-        <p>Your portal to inspiration and innovation</p>
+        <h1>MRC Consultancy</h1>
+        <p>Your Trusted Partner for Cybersecurity Solutions</p>
     </header>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </nav>
-
-    <!-- Main Content Section -->
-    <section>
-        <h2>Discover Our World</h2>
-        <p>
-            Explore our website to learn more about the services we provide, the projects we've worked on, and how we can help you achieve your goals.
-        </p>
-        <a href="#" class="btn">Learn More</a>
+    <section class="main-content">
+        <h2>Secure Your Business with Our Expert Cybersecurity Services</h2>
+        <p>We specialize in protecting your business from evolving cyber threats. Our cybersecurity experts implement cutting-edge solutions to safeguard your data, networks, and systems.</p>
+        <a href="#contact" class="cta-button">Get Started with Our Security Services</a>
     </section>
 
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+        <p>&copy; 2025 MRC Consultancy | <a href="#contact">Contact Us</a></p>
     </footer>
-
 </body>
+
 </html>
+
 
 
 
