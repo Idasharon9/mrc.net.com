@@ -1,111 +1,89 @@
 
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MRC Consultancy - Cybersecurity Services</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            background: url('https://www.transparenttextures.com/patterns/circuit-board-2.png'), #2c3e50; /* Cybersecurity-style background */
-            color: #fff;
-            line-height: 1.6;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        header {
-            background-color: rgba(44, 62, 80, 0.8);
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            font-weight: 700;
-        }
-
-        .main-content {
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        .main-content h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        .main-content p {
-            font-size: 1.2em;
-            max-width: 800px;
-            margin: 0 auto 30px auto;
-        }
-
-        .cta-button {
-            background-color: #e74c3c;
-            color: white;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .cta-button:hover {
-            background-color: #c0392b;
-        }
-
-        footer {
-            background-color: rgba(44, 62, 80, 0.8);
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-container {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      text-align: center;
+    }
+    .login-container h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    .forgot-password {
+      margin-top: 10px;
+      font-size: 12px;
+    }
+    .forgot-password a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .forgot-password a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-
 <body>
-    <header>
-        <h1>MRC Consultancy</h1>
-        <p>Your Trusted Partner for Cybersecurity Solutions</p>
-    </header>
-
-    <section class="main-content">
-        <h2>Secure Your Business with Our Expert Cybersecurity Services</h2>
-        <p>We specialize in protecting your business from evolving cyber threats. Our cybersecurity experts implement cutting-edge solutions to safeguard your data, networks, and systems.</p>
-        <a href="#contact" class="cta-button">Get Started with Our Security Services</a>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 MRC Consultancy | <a href="#contact">Contact Us</a></p>
-    </footer>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form action="submit-login" method="POST">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <div class="forgot-password">
+        <a href="#">Forgot Password?</a>
+      </div>
+    </form>
+  </div>
 </body>
-
 </html>
-
-
-
-
-
-
